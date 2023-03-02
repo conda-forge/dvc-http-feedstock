@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -29,6 +29,7 @@ test:
     - dvc_http
   requires:
     - pip
+    - dvc
   commands:
     - pip check
 
